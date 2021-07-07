@@ -367,6 +367,43 @@ img[src="images/vector-smart-object.png"] {
     position: relative;
 }
 
+.schedule-date {
+    padding-top: 175px;
+    display: flex;
+    justify-content: center;
+}
+
+.schedule-date > p {
+    font-family: NanumSquareB;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.13;
+    letter-spacing: -1.8px;
+    text-align: center;
+    margin: 0 15px;
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+.schedule-date > p:hover {
+    color: #23aab7;
+}
+
+.schedule-memo {
+    overflow: hidden;
+    position: relative;
+}
+.schedule-memo > p {
+    border: 1px solid black;
+
+}
+
+.right-bottom-angle.schedule-angle {
+    border: 1px solid black;
+}
+
 
 
 
@@ -378,22 +415,79 @@ img[src="images/vector-smart-object.png"] {
 
 .way-top {
     position: relative;
+    height: 173px;
 }
 
 .wrapper-way img[src="images/layer-8.png"] {
-    position: absolute;
-    top: 173px;
-    left: 0;
     width: 1920px;
     height: 530px;
     object-fit: contain;
 }
 
 .way-bottom {
-    position: absolute;
-    top: 703px;
-    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
 }
+
+.way-bottom > article {
+    width: 378px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.way-bottom > article > p {
+    font-size: 24px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.8px;
+    color:black;
+    padding-bottom: 40px;
+}
+
+.article-content-wrapper {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+
+.article-content-wrapper > div,
+.article-content-wrapper > p {
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: -1.65px;
+    color: rgba(0, 0, 0, 0.452);
+}
+
+.article-content-wrapper > div.circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 22px;
+    color: white;
+}
+
+.circle.img {
+    border: 1px solid #23aab7;
+}
+
+.yellowgreen {
+    background-color: #71ce7f;
+}
+
+.blue {
+    background-color: #3d61ae;
+}
+
 
 
 
