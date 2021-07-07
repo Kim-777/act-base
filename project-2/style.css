@@ -20,7 +20,7 @@ section {
 
 .wrapper-header-phone {
     height: 1080px;
-    background-image: url(/images/pattern.png);
+    background-image: url(./images/pattern.png);
     position: relative;
     width: 100%;
 }
@@ -60,7 +60,7 @@ section {
 
 .selected-title > .selected-mark > div {
     width: 20px;
-    height: 3px;
+    height: 2px;
     background-color: rgba(192, 192, 192, 0.33);
 }
 
@@ -137,7 +137,7 @@ header nav ul > li:last-child {
 /********************************************** intro **********************************************/
 .wrapper-intro {
     height: 820px;
-    background-image: url(/images/layer-4.png);
+    background-image: url(./images/layer-4.png);
     position: relative;
     overflow: hidden;
 }
@@ -365,6 +365,7 @@ img[src="images/vector-smart-object.png"] {
 
 .schedule {
     position: relative;
+    height: 1120px;
 }
 
 .schedule-date {
@@ -393,25 +394,154 @@ img[src="images/vector-smart-object.png"] {
 
 
 .schedule-content {
-    margin-top: 48px;
+    margin-top: 98px;
     display: flex;
     justify-content: center;
-}
-
-
-.schedule-memo {
-    overflow: hidden;
     position: relative;
 }
-.schedule-memo > p {
-    border: 1px solid black;
 
+.schedule-time {
+    width: 1006px;
+    height: 672px;
 }
 
-.right-bottom-angle.schedule-angle {
-    border: 1px solid black;
+.schedule-time > li {
+    text-align: left;
+    height: 61px;
+    line-height: 61px;
+    font-size: 16px;
+    border-top: 1px solid rgba(173, 173, 173, 0.15);
 }
 
+.schedule-time > li:last-child {
+    border-bottom: 1px solid rgba(173, 173, 173, 0.15);
+}
+
+.schedule-float-boxs-wrapper {
+    position: absolute;
+    left: 177px;
+    top: -56px;
+    width: 895px;
+    height: 716px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.schedule-column {
+    width: 285px;
+    height: 716px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: skyblue;
+}
+
+.schedule-column-title {
+    width: 285px;
+    height: 40px;
+    margin-bottom: 19px;
+    color: white;
+    line-height: 40px;
+    padding-left: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.schedule-column-title::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    transform: rotate(45deg);
+}
+
+.schedule-column-anytime {
+    background-color: #2d53a4;
+}
+
+.schedule-column-anywhere {
+    background-color: #ed6e01;
+}
+
+.schedule-column-anyone {
+    background-color: #23aab7;
+}
+
+
+.schedule-column-list {
+    width: 285px;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -1.2px;
+    text-align: left;
+    padding-left: 16px;
+    margin-bottom: 11px;
+}
+
+
+.blue-list {
+    background-color: white;
+    border: 1px solid #2d53a4;
+    color: #2d53a4;
+}
+
+.blue-list-small {
+    height: 50px;
+    line-height: 50px;
+}
+
+.blue-list-big {
+    height: 111px;
+    line-height: 111px;
+}
+
+.orange-list {
+    background-color: white;
+    border: 1px solid #ed6e01;
+    color: #ed6e01;
+}
+
+.orange-list-small {
+    height: 172px;
+    line-height: 172px;
+}
+
+.orange-list-big {
+    height: 233px;
+    line-height: 233px;
+}
+
+.green-list {
+    background-color: white;
+    border: 1px solid #23aab7;
+    color: #23aab7;
+}
+
+.green-list-small {
+    height: 233px;
+    line-height: 233px;
+}
+
+.green-list-big {
+    height: 416px;
+    padding-top: 107px
+}
+
+
+.right-bottom-angle.schedule-angle-blue {
+    border: 1px solid #2d53a4;
+}
+
+div.schedule-float-boxs-wrapper > ul > li:last-child {
+    margin-bottom: 0;
+}
 
 
 
