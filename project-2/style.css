@@ -391,6 +391,14 @@ img[src="images/vector-smart-object.png"] {
     color: #23aab7;
 }
 
+
+.schedule-content {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+
 .schedule-memo {
     overflow: hidden;
     position: relative;
