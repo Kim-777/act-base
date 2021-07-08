@@ -41,7 +41,6 @@ section {
 .selected-title > p {
     width: 126px;
     height: 48px;
-    font-family: NotoSansCJKkr;
     font-size: 34px;
     font-weight: 300;
     font-stretch: normal;
@@ -74,19 +73,26 @@ section {
 /********************************************** header **********************************************/
 .wrapper-header {
     border-bottom: 1px solid rgba(221, 212, 212, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 1920px;
 }
 
 header {
     height: 100px;
     position: relative;
+    z-index: 10;
 }
 
 header img.logo {
     width: 190px;
     height: 44px;
-    background-color:white;
+    object-fit: contain;
     position: absolute;
     top: 28px;
+    color: black;
+    z-index: 10;
 }
 
 header nav {
@@ -104,9 +110,8 @@ header nav ul {
 
 header nav ul > li {
     width: 61px;
-    height: 17px;
+    height: 27px;
     margin: 0 24px;
-    font-family: NotoSansCJKkr;
     font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
@@ -119,7 +124,7 @@ header nav ul > li {
     transition: all ease-in 300ms;
 }
 
-header nav ul > li:hover {
+header nav ul > li:hover > a {
     color:black;
 }
 
@@ -130,6 +135,172 @@ header nav ul > li:last-child {
 
 
 
+/********************************************** phone **********************************************/
+.wrapper-phone {
+    height: 979px;
+    padding-top: 100px;
+}
+
+.phone-section {
+    height: 100%;
+    position: relative;
+}
+
+.phone {
+    width: 640px;
+    height: 943px;
+    position: absolute;
+    top: 40px;
+    left: 250px;
+    background-image:url(./images/mobile.png);
+}
+
+.phone-title {
+    position: absolute;
+    top: 150px;
+    left: 158px;
+    width: 322px;
+    height: 119px;
+    background-image: url(./images/phone-title.png);
+}
+
+.phone-slogan {
+    position: absolute;
+    top: 290px;
+    left: 169px;
+    font-size: 28px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -2.1px;
+    text-align: center;
+    color: #666666;
+}
+
+.phone-schedule {
+    position: absolute;
+    top: 333px;
+    left: 83px;
+    width: 474px;
+    height: 53px;
+    border-radius: 26.5px;
+    background-color: #32cada;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 53px;
+    letter-spacing: -1.95px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.phone-content {
+    position: absolute;
+    top: 429px;
+    left: 185px;
+    width: 270px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.phone-content > p:first-child {
+    font-size: 22px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: -1.65px;
+    text-align: center;
+    color: black;
+}
+
+.phone-content > p:nth-child(2) {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.8px;
+    color: #23aab7;
+}
+
+img[src="images/char.png"] {
+    position: absolute;
+    right: 167px;
+    bottom: 208px;
+    width: 303px;
+    height: 107px;
+    object-fit: contian;
+
+}
+
+.phone-button {
+    position: absolute;
+    width: 350px;
+    height: 70px;
+    right: 145px;
+    bottom: 139px;
+    border-radius: 5px;
+    background-color: #23aab7;
+    text-align: center;
+}
+
+.phone-button > a {
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -1.8px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.floating-ball {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.floating-ball.floating-microphone {
+    background-image: url(./images/icon-news-microphone.png);
+    top: 107px;
+    left: 124px;
+}
+
+.floating-ball.floating-headphones {
+    background-image: url(./images/icon-headphones.png);
+    top: 437px;
+    left: 49px;
+}
+
+.floating-ball.floating-www {
+    background-image: url(./images/icon-www.png);
+    left: 172px;
+    bottom: 85px;
+}
+
+.floating-ball.floating-share {
+    background-image: url(./images/icon-share.png);
+    top: 193px;
+    right: 194px;
+}
+
+.floating-ball.floating-speech {
+    background-image: url(./images/icon-speech.png);
+    bottom: 313px;
+    right: 80px;
+}
+
+.floating-ball.floating-news {
+    background-image: url(./images/icon-news.png);
+    bottom: 167px;
+    right: 224px;
+}
 
 
 
@@ -161,7 +332,7 @@ header nav ul > li:last-child {
 }
 
 
-.intro {
+.intro-section {
     position: relative;
     height: 820px;
 }
@@ -267,7 +438,7 @@ header nav ul > li:last-child {
 }
 
 
-.program {
+.program-section {
     position: relative;
     height: 1322px;
 }
@@ -356,6 +527,20 @@ img[src="images/vector-smart-object.png"] {
     border-bottom: none;
 }
 
+.small-list {
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #888888;
+}
+
+.small-list:last-child {
+    padding-bottom: 10px;
+}
 
 /********************************************** schedule **********************************************/
 .wrapper-schedule {
@@ -363,7 +548,7 @@ img[src="images/vector-smart-object.png"] {
 }
 
 
-.schedule {
+.schedule-section {
     position: relative;
     height: 1120px;
 }
@@ -386,10 +571,13 @@ img[src="images/vector-smart-object.png"] {
     margin: 0 15px;
     color: #aaaaaa;
     cursor: pointer;
+    border-bottom: 2px solid #aaaaaa;
+    transition: all ease-in 300ms;
 }
 
 .schedule-date > p:hover {
     color: #23aab7;
+    border-bottom: 2px solid #23aab7;
 }
 
 
@@ -433,7 +621,7 @@ img[src="images/vector-smart-object.png"] {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-color: skyblue;
+    /* background-color: skyblue; */
 }
 
 .schedule-column-title {
@@ -481,12 +669,40 @@ img[src="images/vector-smart-object.png"] {
     font-style: normal;
     letter-spacing: -1.2px;
     text-align: left;
-    padding-left: 16px;
     margin-bottom: 11px;
 }
 
+.schedule-column-list > div {
+    width: 100%;
+    height: 100%;
+    padding-left: 16px;
+}
 
-.blue-list {
+.schedule-column-list::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color:#fafafa;
+    bottom: -11px;
+    right: -11px;
+    transform:rotate(45deg);
+}
+
+.schedule-column-list.blue-list::after{
+    border: 1px solid #2d53a4;
+}
+
+.schedule-column-list.orange-list::after{
+    border: 1px solid #ed6e01;
+}
+
+.schedule-column-list.green-list::after{
+    border: 1px solid #23aab7;
+}
+
+
+.blue-list > div {
     background-color: white;
     border: 1px solid #2d53a4;
     color: #2d53a4;
@@ -502,7 +718,7 @@ img[src="images/vector-smart-object.png"] {
     line-height: 111px;
 }
 
-.orange-list {
+.orange-list > div {
     background-color: white;
     border: 1px solid #ed6e01;
     color: #ed6e01;
@@ -518,7 +734,7 @@ img[src="images/vector-smart-object.png"] {
     line-height: 233px;
 }
 
-.green-list {
+.green-list > div {
     background-color: white;
     border: 1px solid #23aab7;
     color: #23aab7;
@@ -531,7 +747,15 @@ img[src="images/vector-smart-object.png"] {
 
 .green-list-big {
     height: 416px;
+}
+
+.green-list-big > div {
     padding-top: 107px
+}
+
+.green-list-big > div > ul {
+    font-size: 13px;
+    margin-bottom: 20px;
 }
 
 
@@ -551,7 +775,7 @@ div.schedule-float-boxs-wrapper > ul > li:last-child {
     position: relative;
 }
 
-.way-top {
+.way-top-section {
     position: relative;
     height: 173px;
 }
@@ -562,21 +786,21 @@ div.schedule-float-boxs-wrapper > ul > li:last-child {
     object-fit: contain;
 }
 
-.way-bottom {
+.way-bottom-section {
     position: relative;
     display: flex;
     justify-content: space-between;
     padding-top: 48px;
 }
 
-.way-bottom > article {
+.way-bottom-section > article {
     width: 378px;
     height: 180px;
     display: flex;
     flex-direction: column;
 }
 
-.way-bottom > article > p {
+.way-bottom-section > article > p {
     font-size: 24px;
     font-weight: 300;
     font-stretch: normal;

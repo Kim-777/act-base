@@ -12,3 +12,8 @@ ol, ul, li {
 img {
     all:unset;
 }
+
+a {
+    text-decoration: none;
+    color: rgba(51, 51, 51, 0.5);
+}
