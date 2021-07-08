@@ -1,7 +1,7 @@
 /********************************************** common **********************************************/
 #wrapper {
     margin: 0 auto;
-    width: 1920px;
+    /* width: 1920px; */
 }
 
 header,
@@ -18,14 +18,14 @@ section {
 }
 
 
-.wrapper-header-phone {
+.wrapper-phone {
     height: 1080px;
     background-image: url(./images/pattern.png);
     position: relative;
     width: 100%;
 }
 
-.wrapper-header-phone > img {
+.wrapper-phone > img {
     position: absolute;
     top: 0px;
     right: 107px;
@@ -70,13 +70,18 @@ section {
 
 
 
+
+
+
+
 /********************************************** header **********************************************/
 .wrapper-header {
     border-bottom: 1px solid rgba(221, 212, 212, 0.1);
     position: fixed;
     top: 0;
     z-index: 10;
-    width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 header {
@@ -139,8 +144,11 @@ header nav ul > li:last-child {
 
 
 
+
+
+
 /********************************************** phone **********************************************/
-.wrapper-phone {
+.wrapper-phone-content {
     height: 1079px;
     padding-top: 100px;
 }
@@ -334,6 +342,12 @@ img[src="images/char.png"] {
     background-image: url(./images/anywhere-proposal.png);
 }
 
+
+
+
+
+
+
 /********************************************** intro **********************************************/
 .wrapper-intro {
     height: 820px;
@@ -460,6 +474,11 @@ img[src="images/char.png"] {
 }
 
 
+
+
+
+
+
 /********************************************** program **********************************************/
 .wrapper-program {
     height: 1322px;
@@ -550,6 +569,93 @@ img[src="images/vector-smart-object.png"] {
     color: #888888;
     padding-left: 15px;
     font-size: 13px;
+    position: relative;
+    transition: all ease-in 200ms;
+}
+
+.program-sidebar-list > ul > li > span,
+.program-sidebar-list > ul > li > p {
+    cursor: pointer;
+}
+
+.program-sidebar-list > ul > li .magnifier {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+}
+
+.magnifier-head {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: all ease-in 200ms;
+}
+
+.magnifier-pole {
+    height: 1px;
+    width: 5px;
+    background-color: transparent;;
+    position: absolute;
+    right: 4px;
+    top: 13px;
+    transform: rotate(45deg);
+    transition: all ease-in 200ms;
+}
+
+.program-sidebar-list-blue > ul > li > span:hover {
+    color: #2d53a4;
+}
+
+.program-sidebar-list-orange > ul > li > span:hover {
+    color: #ed6e01;
+}
+
+.program-sidebar-list-green > ul > li > span:hover {
+    color: #23aab7;
+}
+
+.program-sidebar-list-blue > ul > li span:hover + div.magnifier > .magnifier-head {
+    border: 1px solid #2d53a4;
+}
+
+.program-sidebar-list-blue > ul > li span:hover + div.magnifier > .magnifier-pole {
+    background-color: #2d53a4;
+}
+
+.program-sidebar-list-orange > ul > li span:hover + div.magnifier > .magnifier-head {
+    border: 1px solid #ed6e01;
+}
+
+.program-sidebar-list-orange > ul > li span:hover + div.magnifier > .magnifier-pole {
+    background-color: #ed6e01;
+}
+
+
+.program-sidebar-list-green > ul > li span:hover + div.magnifier > .magnifier-head {
+    border: 1px solid #23aab7;
+}
+
+.program-sidebar-list-green > ul > li span:hover + div.magnifier > .magnifier-pole {
+    background-color: #23aab7;
+}
+
+.program-sidebar-list-green > ul > li p:hover {
+    color: #23aab7;
+}
+
+.program-sidebar-list-green > ul > li p:hover + div.magnifier > .magnifier-head {
+    border: 1px solid #23aab7;
+}
+
+.program-sidebar-list-green > ul > li p:hover + div.magnifier > .magnifier-pole {
+    background-color: #23aab7;
+}
+
+.program-sidebar-list-green > ul > li p:hover ~ ul > li {
+    color: #23aab7;
 }
 
 .program-sidebar-list > ul > li:last-child {
@@ -570,6 +676,12 @@ img[src="images/vector-smart-object.png"] {
 .small-list:last-child {
     padding-bottom: 10px;
 }
+
+
+
+
+
+
 
 /********************************************** schedule **********************************************/
 .wrapper-schedule {
@@ -799,9 +911,13 @@ div.schedule-float-boxs-wrapper > ul > li:last-child {
 
 
 
+
+
+
 /********************************************** way **********************************************/
 .wrapper-way {
     position: relative;
+    text-align: center;
 }
 
 .way-top-section {
@@ -838,6 +954,7 @@ div.schedule-float-boxs-wrapper > ul > li:last-child {
     letter-spacing: -1.8px;
     color:black;
     padding-bottom: 40px;
+    text-align: left;
 }
 
 .article-content-wrapper {
@@ -878,6 +995,9 @@ div.schedule-float-boxs-wrapper > ul > li:last-child {
 .blue {
     background-color: #3d61ae;
 }
+
+
+
 
 
 
