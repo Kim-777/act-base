@@ -612,56 +612,68 @@ img[src="images/vector-smart-object.png"] {
     transition: all ease-in 200ms;
 }
 
-.program-sidebar-list-blue > ul > li > span:hover {
+.program-sidebar-list-anytime > ul > li > span:hover {
     color: #2d53a4;
 }
 
-.program-sidebar-list-orange > ul > li > span:hover {
+.program-sidebar-list-anywhere > ul > li > span:hover {
     color: #ed6e01;
 }
 
-.program-sidebar-list-green > ul > li > span:hover {
+.program-sidebar-list-anyone > ul > li > span:hover {
     color: #23aab7;
 }
 
-.program-sidebar-list-blue > ul > li span:hover + div.magnifier > .magnifier-head {
+.program-sidebar-list-here > ul > li > span:hover {
+    color: #574f9f;
+}
+
+.program-sidebar-list-anytime > ul > li span:hover + div.magnifier > .magnifier-head {
     border: 1px solid #2d53a4;
 }
 
-.program-sidebar-list-blue > ul > li span:hover + div.magnifier > .magnifier-pole {
+.program-sidebar-list-anytime > ul > li span:hover + div.magnifier > .magnifier-pole {
     background-color: #2d53a4;
 }
 
-.program-sidebar-list-orange > ul > li span:hover + div.magnifier > .magnifier-head {
+.program-sidebar-list-anywhere > ul > li span:hover + div.magnifier > .magnifier-head {
     border: 1px solid #ed6e01;
 }
 
-.program-sidebar-list-orange > ul > li span:hover + div.magnifier > .magnifier-pole {
+.program-sidebar-list-anywhere > ul > li span:hover + div.magnifier > .magnifier-pole {
     background-color: #ed6e01;
 }
 
 
-.program-sidebar-list-green > ul > li span:hover + div.magnifier > .magnifier-head {
+.program-sidebar-list-here > ul > li span:hover + div.magnifier > .magnifier-head {
+    border: 1px solid #574f9f;
+}
+
+.program-sidebar-list-here > ul > li span:hover + div.magnifier > .magnifier-pole {
+    background-color: #574f9f;
+}
+
+.program-sidebar-list-anyone > ul > li span:hover + div.magnifier > .magnifier-head {
     border: 1px solid #23aab7;
 }
 
-.program-sidebar-list-green > ul > li span:hover + div.magnifier > .magnifier-pole {
+.program-sidebar-list-anyone > ul > li span:hover + div.magnifier > .magnifier-pole {
     background-color: #23aab7;
 }
 
-.program-sidebar-list-green > ul > li p:hover {
+.program-sidebar-list-anyone > ul > li p:hover {
     color: #23aab7;
 }
 
-.program-sidebar-list-green > ul > li p:hover + div.magnifier > .magnifier-head {
+.program-sidebar-list-anyone > ul > li p:hover + div.magnifier > .magnifier-head {
     border: 1px solid #23aab7;
 }
 
-.program-sidebar-list-green > ul > li p:hover + div.magnifier > .magnifier-pole {
+.program-sidebar-list-anyone > ul > li p:hover + div.magnifier > .magnifier-pole {
     background-color: #23aab7;
 }
 
-.program-sidebar-list-green > ul > li p:hover ~ ul > li {
+.program-sidebar-list-anyone > ul > li p:hover ~ ul > li {
     color: #23aab7;
 }
 
@@ -837,71 +849,71 @@ img[src="images/vector-smart-object.png"] {
     transform:rotate(45deg);
 }
 
-.schedule-column-list.blue-list::after{
+.schedule-column-list.anytime-list::after{
     border: 1px solid #2d53a4;
 }
 
-.schedule-column-list.orange-list::after{
+.schedule-column-list.anywhere-list::after{
     border: 1px solid #ed6e01;
 }
 
-.schedule-column-list.green-list::after{
+.schedule-column-list.anyone-list::after{
     border: 1px solid #23aab7;
 }
 
 
-.blue-list > div {
+.anytime-list > div {
     background-color: white;
     border: 1px solid #2d53a4;
     color: #2d53a4;
 }
 
-.blue-list-small {
+.anytime-list-small {
     height: 50px;
     line-height: 50px;
 }
 
-.blue-list-big {
+.anytime-list-big {
     height: 111px;
     line-height: 111px;
 }
 
-.orange-list > div {
+.anywhere-list > div {
     background-color: white;
     border: 1px solid #ed6e01;
     color: #ed6e01;
 }
 
-.orange-list-small {
+.anywhere-list-small {
     height: 172px;
     line-height: 172px;
 }
 
-.orange-list-big {
+.anywhere-list-big {
     height: 233px;
     line-height: 233px;
 }
 
-.green-list > div {
+.anyone-list > div {
     background-color: white;
     border: 1px solid #23aab7;
     color: #23aab7;
 }
 
-.green-list-small {
+.anyone-list-small {
     height: 233px;
     line-height: 233px;
 }
 
-.green-list-big {
+.anyone-list-big {
     height: 416px;
 }
 
-.green-list-big > div {
+.anyone-list-big > div {
     padding-top: 107px
 }
 
-.green-list-big > div > ul {
+.anyone-list-big > div > ul {
     font-size: 13px;
     margin-bottom: 20px;
 }
