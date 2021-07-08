@@ -5,7 +5,12 @@
 }
 
 header,
-section {
+.phone-section,
+.intro-section,
+.program-section,
+.schedule-section, 
+.way-top-section,
+.way-bottom-section {
     width: 1140px;
     margin: 0 auto;
 }
@@ -467,6 +472,7 @@ img[src="images/char.png"] {
 .intro-text-box p {
     width: 450px;
     color:silver;
+    text-align: justify;
 }
 
 .intro-text-box p > b {
@@ -500,16 +506,17 @@ img[src="images/char.png"] {
 }
 
 img[src="images/vector-smart-object.png"] {
-    width: 807px;
+    flex: 1;
     height: 1013px;
     object-fit: contain;
 }
 
 
 .wrapper-program > img[src="images/sticky.png"] {
-    position: absolute;
+    position: fixed;
     right: 39px;
-    bottom: 179px;
+    bottom: 50px;
+    z-index: 20;
 }
 
 .program-sidebar-wrapper {
@@ -939,7 +946,7 @@ div.schedule-float-boxs-wrapper > ul > li:last-child {
 }
 
 .way-bottom-section > article {
-    width: 378px;
+    width: 50%;
     height: 180px;
     display: flex;
     flex-direction: column;
