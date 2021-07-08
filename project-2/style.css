@@ -120,6 +120,10 @@ header nav ul > li {
     letter-spacing: -1.35px;
     text-align: center;
     color: rgba(51, 51, 51, 0.5);
+
+}
+
+header nav ul > li > a {
     cursor: pointer;
     transition: all ease-in 300ms;
 }
@@ -137,7 +141,7 @@ header nav ul > li:last-child {
 
 /********************************************** phone **********************************************/
 .wrapper-phone {
-    height: 979px;
+    height: 1079px;
     padding-top: 100px;
 }
 
@@ -245,6 +249,7 @@ img[src="images/char.png"] {
     border-radius: 5px;
     background-color: #23aab7;
     text-align: center;
+    cursor: pointer;
 }
 
 .phone-button > a {
@@ -258,12 +263,19 @@ img[src="images/char.png"] {
     letter-spacing: -1.8px;
     text-align: center;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .floating-ball {
     width: 100px;
     height: 100px;
     position: absolute;
+}
+
+.floating-box {
+    position: absolute;
+    width: 321px;
+    height: 111px;
 }
 
 .floating-ball.floating-microphone {
@@ -303,7 +315,24 @@ img[src="images/char.png"] {
 }
 
 
+.floating-anytime {
+    top: 266px;
+    left: 0;
+    background-image: url(./images/anytime-proposal.png);
+}
 
+.floating-anyone {
+    left: 0;
+    bottom: 261px;
+    background-image: url(./images/anyone-proposal.png);
+}
+
+.floating-anywhere {
+    width: 361px;
+    bottom: 440px;
+    right: 0;
+    background-image: url(./images/anywhere-proposal.png);
+}
 
 /********************************************** intro **********************************************/
 .wrapper-intro {
