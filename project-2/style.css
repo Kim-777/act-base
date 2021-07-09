@@ -1,16 +1,7 @@
 /********************************************** common **********************************************/
-#wrapper {
-    margin: 0 auto;
-    /* width: 1920px; */
-}
 
 header,
-.phone-section,
-.intro-section,
-.program-section,
-.schedule-section, 
-.way-top-section,
-.way-bottom-section {
+.container {
     width: 1140px;
     margin: 0 auto;
 }
@@ -719,7 +710,8 @@ img[src="images/vector-smart-object.png"] {
     justify-content: center;
 }
 
-.schedule-date > p {
+.schedule-date > a {
+    all: unset;
     font-family: NanumSquareB;
     font-size: 24px;
     font-weight: normal;
@@ -735,7 +727,7 @@ img[src="images/vector-smart-object.png"] {
     transition: all ease-in 300ms;
 }
 
-.schedule-date > p:hover {
+.schedule-date > a:hover {
     color: #23aab7;
     border-bottom: 2px solid #23aab7;
 }
@@ -945,7 +937,7 @@ div.schedule-float-boxs-wrapper > ul > li:last-child {
 }
 
 .wrapper-way img[src="images/layer-8.png"] {
-    width: 1920px;
+    width: 100%;
     height: 530px;
     object-fit: contain;
 }
