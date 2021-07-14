@@ -1,17 +1,26 @@
-// import axios from 'axios';
-
-// console.log(axios);
-console.log('테스트!')
 const articleWidth = 399;
 const cardsBox = document.querySelector('.cards-box');
 const cards = Array.from(document.querySelectorAll('.card'));
 let cardsLength = cards.length;
-console.log('cards', cards);
-console.log(cards.length);
 const tabNextButton = document.querySelector('.tab-arrow-right');
 const tabPrevButton = document.querySelector('.tab-arrow-left');
 const cardPagenation = document.querySelector('.card-pagenation');
 let currentSlideIndex = 0;
+const headerList = document.querySelectorAll('.header-list');
+
+
+for(let list of headerList) {
+    list.addEventListener('mouseover', () => {
+        console.log(list.children[1].classList.add('show'));
+    })
+
+    list.addEventListener('mouseout', () => {
+        console.log(list.children[1].classList.remove('show'));
+    })
+}
+
+console.log(headerList);
+
 
 cardsBox.style.transform = `translateX(-${articleWidth}px)`;
 console.log(cardsBox.style.left);
@@ -24,15 +33,6 @@ function makeClone() {
 }
 
 
-
-tabPrevButton.addEventListener('click', () => {
-    moveCard(--currentSlideIndex);
-})
-tabNextButton.addEventListener('click', () => {
-    moveCard(++currentSlideIndex);
-})
-
-
 function moveCard(index) {
     if(!cardsBox.classList.contains('animated')) cardsBox.classList.add('animated');
     cardsBox.style.left =  -index*articleWidth + 'px';
@@ -40,7 +40,6 @@ function moveCard(index) {
         indexCheck(index);
     }, 500);
 }
-
 
 function indexCheck(index) {    
     if(index > 0 && index < cardsLength) return;
@@ -55,7 +54,6 @@ function indexCheck(index) {
     if(index === cardsLength) {
         currentSlideIndex = 0;
         cardsBox.style.left = 0  + 'px';
-
     }
 }
 
@@ -65,3 +63,13 @@ function indexCheck(index) {
 
 // 함수 호출 부분
 makeClone();
+
+
+
+// event 등록
+tabPrevButton.addEventListener('click', () => {
+    moveCard(--currentSlideIndex);
+})
+tabNextButton.addEventListener('click', () => {
+    moveCard(++currentSlideIndex);
+})

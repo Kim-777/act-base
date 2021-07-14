@@ -102,7 +102,6 @@ img[src="images/arrow.png"] {
     position: absolute;
     top: 0;
     width: fit-content;
-    width: 60px;
     /* margin-right: 35px; */
     font-size: 16px;
     font-weight: 600;
@@ -114,7 +113,7 @@ img[src="images/arrow.png"] {
     color: #ffffff;
     cursor: pointer;
     transition: all ease-in 300ms;
-    margin-top: 20px;
+    margin-top: 62px;
     display: none;
 }
 
@@ -128,13 +127,13 @@ img[src="images/arrow.png"] {
 
 #header-right-bottom > ul > li > a{
     width: 60px;
-    height: 16px;
-    margin-right: 35px;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 23px 0 12px;
     font-size: 16px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
-    /* line-height: 2.88; */
     letter-spacing: -1.2px;
     text-align: center;
     color: #ffffff;
@@ -142,16 +141,38 @@ img[src="images/arrow.png"] {
     transition: all ease-in 300ms;
 }
 #header-right-bottom > ul > li > ul > li {
-    padding-top: 10px;
     transition: all ease-in 300ms;
 }
 
+#header-right-bottom > ul > li > ul > li:first-child {
+    padding-top: 10px;
+}
 
 
 #header-right-bottom {
     padding-top: 37px;
 }
 
+
+#header-right-bottom > ul > li > ul > li > a {
+    display: block;
+    width: 60px;
+    height: 70px;
+    line-height: 70px;
+    padding-right: 25px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -1.2px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all ease-in 300ms;
+    border: 1px solid yellow;
+    margin-top: -1px;
+}
 
 #header-right-bottom > ul > li > ul > li > a:hover {
     color: #e2b480;
