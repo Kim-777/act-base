@@ -7,7 +7,16 @@ const tabPrevButton = document.querySelector('.tab-arrow-left');
 const cardPagenation = document.querySelector('.card-pagenation');
 let currentSlideIndex = 0;
 const headerList = document.querySelectorAll('.header-list');
+const cardSectionLetters = Array.from(document.querySelector('.card-section-letter > ul').children);
+const letterP = document.querySelector('.card-section-letter > p');
+console.log(letterP.textContent);
 
+
+for(let letter of cardSectionLetters) {
+    letter.addEventListener('click', () => {
+        letterP.textContent = letter.textContent;
+    });
+}
 
 for(let list of headerList) {
     list.addEventListener('mouseover', () => {

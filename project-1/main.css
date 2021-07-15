@@ -161,21 +161,24 @@ img[src="images/arrow.png"] {
     line-height: 70px;
     padding-right: 25px;
     padding-left: 10px;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: -1.2px;
     text-align: center;
-    color: #ffffff;
+    color: #666;
     cursor: pointer;
     transition: all ease-in 300ms;
-    border: 1px solid yellow;
+    border: 1px solid #eee;
     margin-top: -1px;
+    background-color: #fff;
 }
 
 #header-right-bottom > ul > li > ul > li > a:hover {
-    color: #e2b480;
+    background: #fafafa;
+    color: #1a4978;
+    font-weight: 600;
 }
 
 #header-right-bottom ul li a:hover {
