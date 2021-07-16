@@ -43,11 +43,10 @@ window.addEventListener('scroll', () => {
 
 function changeHeader(num) {
     let headerWrapper = document.querySelector('#wrapper-header')
-    if(num) {
-        headerWrapper.classList.add('active');
-    } else {
-        headerWrapper.classList.remove('active');
-    }
+    num ?
+    headerWrapper.classList.add('active')
+    : 
+    headerWrapper.classList.remove('active')
 }
 
 headerSearchBtn.addEventListener('click', openSearchBox);
@@ -142,7 +141,27 @@ function indexCheck(index) {
 }
 
 
+// 메인 검색 기능
+const mainInputWrapper = document.querySelector('.input-wrapper');
+const searchedList = document.querySelector('#search-section > ul');
+const searchMainModal =  document.querySelector('.search-modal-mask')
+console.log(searchedList);
 
+mainInputWrapper.addEventListener('click', openMainModal);
+
+function openMainModal() {
+    mainInputWrapper.classList.add('active');
+    searchMainModal.classList.add('active');
+    searchedList.classList.add('active');
+    window.addEventListener('scroll', scrollModalDown);
+}
+
+function scrollModalDown() {
+    mainInputWrapper.classList.remove('active');
+    searchMainModal.classList.remove('active');
+    searchedList.classList.remove('active');
+    window.removeEventListener('scroll', scrollModalDown);
+}
 
 
 // 함수 호출 부분
